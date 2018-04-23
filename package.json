@@ -1,0 +1,42 @@
+{
+  "name": "emotion-box",
+  "version": "1.0.0",
+  "description": "a collection of css-in-js flexbox layout components",
+  "main": "index.js",
+  "author": "hemlok",
+  "license": "MIT",
+  "private": false,
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "semi": false,
+    "jsxBracketSameLine": true
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "plugins": ["prettier"],
+    "root": true,
+    "rules": {
+      "jsx-a11y/href-no-hash": "off",
+      "jsx-a11y/anchor-is-valid": [
+        "warn",
+        {
+          "aspects": ["invalidHref"]
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "react-emotion": "9.1.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.2.3",
+    "eslint": "4.19.1",
+    "eslint-config-react-app": "2.1.0",
+    "eslint-plugin-flowtype": "2.46.3",
+    "eslint-plugin-import": "2.11.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-prettier": "2.6.0",
+    "eslint-plugin-react": "7.7.0"
+  }
+}
