@@ -1,12 +1,13 @@
 {
   "name": "emotion-box",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a collection of css-in-js flexbox layout components",
   "main": "lib/index.js",
   "author": "hemlok",
   "files": ["lib"],
   "license": "MIT",
   "private": false,
+  "keywords": ["emotion", "css-in-js", "flexbox", "layouts", "react"],
   "repository": {
     "type": "git",
     "url": "https://github.com/hemlok/emotion-box"
