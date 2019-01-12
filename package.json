@@ -1,6 +1,6 @@
 {
   "name": "emotion-box",
-  "version": "2.0.0-beta.2",
+  "version": "2.0.0-beta.3",
   "description": "a collection of css-in-js flexbox layout components",
   "main": "index.js",
   "author": "hemlok",
@@ -54,7 +54,7 @@
     "eslint-plugin-react": "7.7.0"
   },
   "peerDependencies": {
-    "@emotion/core": "10.0.5",
-    "@emotion/styled": "10.0.5"
+    "@emotion/core": "~10",
+    "@emotion/styled": "~10"
   }
 }
