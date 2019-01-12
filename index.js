@@ -5,13 +5,11 @@ const justifyMap = {
   end: 'flex-end',
   'space-between': 'space-between',
   'space-around': 'space-around',
+  center: 'center',
 }
 
 const alignMap = {
-  start: 'flex-start',
-  end: 'flex-end',
-  'space-between': 'space-between',
-  'space-around': 'space-around',
+  ...justifyMap,
   stretch: 'stretch',
 }
 
@@ -20,8 +18,8 @@ const alignItems = ({ align = 'center' }) => alignMap[align]
 
 const Box = styled('div')`
   display: flex;
-  justify-content: ${props => justifyContent};
-  align-items: ${props => alignItems};
+  justify-content: ${justifyContent};
+  align-items: ${alignItems};
   flex-wrap: ${props => (props.wrap ? 'wrap' : 'no-wrap')};
   flex-grow: ${props => (props.grow ? 1 : 0)};
   width: ${props => (props.inline ? 'auto' : '100%')};
