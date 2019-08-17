@@ -13,5 +13,6 @@ jobs:
     steps:
     - name: Build
       run: |
+        ls
         yarn
         yarn build
