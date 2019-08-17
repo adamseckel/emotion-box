@@ -2,13 +2,17 @@
   "name": "emotion-box",
   "version": "2.0.0-beta.4",
   "description": "a collection of css-in-js flexbox layout components",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "author": "hemlok",
   "files": [
-    "index.js"
+    "lib"
   ],
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "build": "tsc"
+  },
   "keywords": [
     "emotion",
     "css-in-js",
@@ -26,35 +30,19 @@
     "semi": false,
     "jsxBracketSameLine": true
   },
-  "eslintConfig": {
-    "extends": "react-app",
-    "plugins": [
-      "prettier"
-    ],
-    "root": true,
-    "rules": {
-      "jsx-a11y/href-no-hash": "off",
-      "jsx-a11y/anchor-is-valid": [
-        "warn",
-        {
-          "aspects": [
-            "invalidHref"
-          ]
-        }
-      ]
-    }
-  },
   "devDependencies": {
-    "eslint": "4.19.1",
-    "eslint-config-react-app": "2.1.0",
-    "eslint-plugin-flowtype": "2.46.3",
-    "eslint-plugin-import": "2.11.0",
-    "eslint-plugin-jsx-a11y": "6.0.3",
-    "eslint-plugin-prettier": "2.6.0",
-    "eslint-plugin-react": "7.7.0"
+    "@emotion/core": "^10.0.16",
+    "@emotion/styled": "^10.0.15",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.8.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3"
   },
   "peerDependencies": {
     "@emotion/core": "~10",
     "@emotion/styled": "~10"
-  }
+  },
+  "dependencies": {}
 }
