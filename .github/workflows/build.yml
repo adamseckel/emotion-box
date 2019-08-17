@@ -12,4 +12,6 @@ jobs:
     
     steps:
     - name: Build
-      run: yarn build
+      run: |
+        yarn
+        yarn build
