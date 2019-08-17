@@ -13,6 +13,6 @@ jobs:
     steps:
     - name: Build
       run: |
-        ls -a
+        git clone git@github.com:hemlok/emotion-box.git
         yarn
         yarn build
